@@ -1,12 +1,10 @@
-<html>
-
+<html ng-app="ngApp">
 <head>
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.common.css %>">
     <meta name="viewport" content="width=device-width">
 </head>
-
-<body>
+<body ng-cloak>
+    <div my-directive >{{message}}</div>
         <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
-
 </html>
