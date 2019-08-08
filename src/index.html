@@ -20,6 +20,15 @@
                                 typeahead-popup-template-url="typeahead-popup.html" template-url="typeahead-match.html"
                                 uib-typeahead="state for state in states | filter:$viewValue | limitTo:24"
                                 typeahead-min-length=0>
+                                <br>
+                                <p>
+                                        <span 
+                                        tooltip-placement="top" 
+                                        uib-tooltip="This tooltip will appear on top of the trigger" 
+                                    >
+                                        This is a tooltip
+                                </span>
+                                </p>
                         </div>
                     </div>
                 </div>

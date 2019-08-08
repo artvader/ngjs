@@ -74,6 +74,18 @@ module.exports = env => {
                 template: './src/typeahead-match.html',
                 filename: 'typeahead-match.html'
             }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/tooltip-popup.html',
+                filename: 'uib/template//tooltip/tooltip-popup.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/tooltip-template-popup.html',
+                filename: 'uib/template//tooltip/tooltip-template-popup.html'
+            }),
             new WebpackMd5Hash(), //Help organize the @media styles
         ],
         devServer: {
