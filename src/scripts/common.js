@@ -1,9 +1,9 @@
 import angular from 'angular';
-import uibootsraptpls from '../libs/ui-bootstrap-tpls-2.5.0.js';
 import uibootstrap from '../libs/ui-bootstrap-2.5.0.js';
 
 
 'use strict';
+//when including module, use the original module name
 angular.module('ngApp', ['ui.bootstrap'])
 .directive('myDirective', [function() {
     return {
