@@ -68,6 +68,12 @@ module.exports = env => {
                 template: './src/typeahead-popup.html',
                 filename: 'typeahead-popup.html'
             }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/typeahead-match.html',
+                filename: 'typeahead-match.html'
+            }),
             new WebpackMd5Hash(), //Help organize the @media styles
         ],
         devServer: {
