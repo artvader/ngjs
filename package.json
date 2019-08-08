@@ -30,7 +30,11 @@
     "webpack-md5-hash": "0.0.6",
     "webpack-node-externals": "^1.7.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "angular-animate": "^1.5.11",
+    "angular-touch": "^1.5.11",
+    "bootstrap-sass": "^3.4.1"
+  },
   "scripts": {
     "test": "test",
     "dev": "webpack-dev-server --env.dev --progress"

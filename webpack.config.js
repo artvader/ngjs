@@ -1,24 +1,22 @@
 // webpack v4
 const path = require('path');
-const nodeExternals = require('webpack-node-externals');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require("webpack-md5-hash");
-const {
-    CleanWebpackPlugin
-} = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
-module.exports = env => {
+module.exports = env => { 
     return {
         entry: {
             main: './src/scripts/common.js',
-            common: './src/sass/style.scss'
+            bootstrap: './node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss',
+            common: './src/sass/style.scss',
         },
         output: {
             path: path.resolve(__dirname, 'dist'),
             filename: 'public/scripts/[name].js'
         },
-        target: env.production ? 'web':'node',
+        target: env.production ? 'node':'web',
         //externals: [nodeExternals()],
         module: {
             rules: [{
@@ -64,12 +62,19 @@ module.exports = env => {
                 template: './src/index.html',
                 filename: 'index.html'
             }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/typeahead-popup.html',
+                filename: 'typeahead-popup.html'
+            }),
             new WebpackMd5Hash(), //Help organize the @media styles
         ],
         devServer: {
             contentBase: path.join(__dirname, 'dist'),
             compress: true,
-            port: 9000
+            port: 9000,
+            watchContentBase: true,
         }
     }
 };

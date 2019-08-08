@@ -1,10 +1,20 @@
 <html ng-app="ngApp">
+
 <head>
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.common.css %>">
     <meta name="viewport" content="width=device-width">
 </head>
-<body ng-cloak>
-    <div my-directive >{{message}}</div>
+
+<body>
+    <div type="text"  my-directive>{{message}}
+            <pre>Model: {{selected | json}}</pre>
+        <input ng-model="selected" 
+        typeahead-popup-template-url="typeahead-popup.html"  
+        uib-typeahead="state for state in states | filter:$viewValue | limitTo:8"
+        typeahead-min-length = 0
+        >
+    </div>
         <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
+
 </html>
