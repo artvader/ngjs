@@ -65,26 +65,164 @@ module.exports = env => {
             new HtmlWebpackPlugin({
                 inject: false,
                 hash: true,
-                template: './src/typeahead-popup.html',
-                filename: 'typeahead-popup.html'
+                template: './src/template/typeahead/typeahead-popup.html',
+                filename: 'uib/template/typeahead/typeahead-popup.html'
             }),
             new HtmlWebpackPlugin({
                 inject: false,
                 hash: true,
-                template: './src/typeahead-match.html',
-                filename: 'typeahead-match.html'
+                template: './src/template/typeahead/typeahead-match.html',
+                filename: 'uib/template/typeahead/typeahead-match.html'
             }),
             new HtmlWebpackPlugin({
                 inject: false,
                 hash: true,
-                template: './src/tooltip-popup.html',
-                filename: 'uib/template//tooltip/tooltip-popup.html'
+                template: './src/template/tooltip/tooltip-popup.html',
+                filename: 'uib/template/tooltip/tooltip-popup.html'
             }),
             new HtmlWebpackPlugin({
                 inject: false,
                 hash: true,
-                template: './src/tooltip-template-popup.html',
-                filename: 'uib/template//tooltip/tooltip-template-popup.html'
+                template: './src/template/tooltip/tooltip-template-popup.html',
+                filename: 'uib/template/tooltip/tooltip-template-popup.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/accordion/accordion.html',
+                filename: 'uib/template/accordion/accordion.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/accordion/accordion-group.html',
+                filename: 'uib/template/accordion/accordion-group.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/alert/alert.html',
+                filename: 'uib/template/alert/alert.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/carousel/carousel.html',
+                filename: 'uib/template/carousel/carousel.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/carousel/slide.html',
+                filename: 'uib/template/carousel/slide.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/datepicker/datepicker.html',
+                filename: 'uib/template/datepicker/datepicker.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/datepicker/day.html',
+                filename: 'uib/template/datepicker/day.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/datepicker/month.html',
+                filename: 'uib/template/datepicker/month.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/datepicker/year.html',
+                filename: 'uib/template/datepicker/year.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/datepickerPopup/popup.html',
+                filename: 'uib/template/datepickerPopup/popup.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/modal/window.html',
+                filename: 'uib/template/modal/window.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/pager/pager.html',
+                filename: 'uib/template/pager/pager.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/pagination/pagination.html',
+                filename: 'uib/template/pagination/pagination.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/popover/popover.html',
+                filename: 'uib/template/popover/popover.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/popover/popover-html.html',
+                filename: 'uib/template/popover/popover-html.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/popover/popover-template.html',
+                filename: 'uib/template/popover/popover-template.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/progressbar/bar.html',
+                filename: 'uib/template/progressbar/bar.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/progressbar/progress.html',
+                filename: 'uib/template/progressbar/progress.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/progressbar/progressbar.html',
+                filename: 'uib/template/progressbar/progressbar.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/rating/rating.html',
+                filename: 'uib/template/rating/rating.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/tabs/tab.html',
+                filename: 'uib/template/tabs/tab.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/tabs/tabset.html',
+                filename: 'uib/template/tabs/tabset.html'
+            }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/template/timepicker/timepicker.html',
+                filename: 'uib/template/timepicker/timepicker.html'
             }),
             new WebpackMd5Hash(), //Help organize the @media styles
         ],
