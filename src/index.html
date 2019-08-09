@@ -19,23 +19,33 @@
                             <input class="form-control" ng-model="selected"
                                 uib-typeahead="state for state in states | filter:$viewValue | limitTo:24"
                                 typeahead-min-length=0>
-                                <br>
-                                <p>
-                                    <span 
-                                        tooltip-placement="top" 
-                                        uib-tooltip="This tooltip will appear on top of the trigger" 
-                                    >
-                                        This is a tooltip
+                            <br>
+                            <p>
+                                <span tooltip-placement="top"
+                                    uib-tooltip="This tooltip will appear on top of the trigger">
+                                    This is a tooltip
                                 </span>
-                                </p>
-                                <uib-progressbar value="55"></uib-progressbar>
-                                <span uib-rating ng-model="rate" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                            </p>
+                            <uib-progressbar value="55"></uib-progressbar>
+                            <span uib-rating ng-model="rate" max="max" read-only="isReadonly"
+                                on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']"
+                                aria-labelledby="default-rating"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+        <div carousel>
+            <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                    <img ng-src="{{slide.image}}" style="margin:auto;">
+                    <div class="carousel-caption">
+                        <h4>Slide {{slide.id}}</h4>
+                        <p>{{slide.text}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
