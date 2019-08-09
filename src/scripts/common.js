@@ -85,7 +85,45 @@ function myDirectiveCtrl($scope) {
     $scope.max = 5;
     $scope.isReadonly = false;
 
+//swiper
+    /*
+          Callbacks:
+          onInit: function (swiper)
+          onDestroy: function (swiper)
+          onClick: function (swiper, e)
+          onTap: function (swiper, e)
+          onDoubleTap: function (swiper, e)
+          onSliderMove: function (swiper, e)
+          onSlideChangeStart: function (swiper)
+          onSlideChangeEnd: function (swiper)
+          onTransitionStart: function (swiper)
+          onTransitionEnd: function (swiper)
+          onImagesReady: function (swiper)
+          onProgress: function (swiper, progress)
+          onTouchStart: function (swiper, e)
+          onTouchMove: function (swiper, e)
+          onTouchMoveOpposite: function (swiper, e)
+          onTouchEnd: function (swiper, e)
+          onReachBeginning: function (swiper)
+          onReachEnd: function (swiper)
+          onSetTransition: function (swiper, duration)
+          onSetTranslate: function (swiper, translate)
+          onAutoplayStart: function (swiper)
+          onAutoplayStop: function (swiper),
+          onLazyImageLoad: function (swiper, slide, image)
+          onLazyImageReady: function (swiper, slide, image)
+          */
+$scope.onInit = function (swiper) {
+    console.log('initialized');
+  };
 
+$scope.onReachEnd = function (swiper) {
+    console.log('reached end');
+}
+
+$scope.onTransitionStart = function (swiper) {
+    console.log('changing');
+}
     
 
 }
