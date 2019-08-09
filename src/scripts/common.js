@@ -1,10 +1,11 @@
 import angular from 'angular';
 import uibootstrap from '../libs/ui-bootstrap-2.5.0.js';
+import swiper from 'angular-ui-swiper';
 
 
 'use strict';
 // when including module, use the original module name
-angular.module('ngApp', ['ui.bootstrap'])
+angular.module('ngApp', ['ui.bootstrap','ui.swiper'])
 .directive('myDirective', [
     function () {
         return {restrict: 'A', controller: 'myDirectiveCtrl'};

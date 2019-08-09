@@ -33,6 +33,7 @@
     "devDependencies": {
         "angular-animate": "^1.5.11",
         "angular-touch": "^1.5.11",
+        "angular-ui-swiper": "^2.3.8",
         "bootstrap-sass": "^3.4.1"
     },
     "scripts": {
