@@ -64,6 +64,12 @@ module.exports = env => {
                 template: './src/index.html',
                 filename: 'index.html'
             }),
+            new HtmlWebpackPlugin({
+                inject: false,
+                hash: true,
+                template: './src/bottom-sheet-list-template.html',
+                filename: 'bottom-sheet-list-template.html'
+            }),
             new WebpackMd5Hash(), //Help organize the @media styles
         ],
         devServer: {

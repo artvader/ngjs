@@ -4,7 +4,6 @@
   "description": "NGJS",
   "dependencies": {
     "autoprefixer": "^9.6.1",
-    "angular": "^1.5.11",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
@@ -30,7 +29,14 @@
     "webpack-md5-hash": "0.0.6",
     "webpack-node-externals": "^1.7.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "angular": "^1.7.8",
+    "angular-animate": "^1.7.8",
+    "angular-aria": "^1.7.8",
+    "angular-material": "^1.1.19",
+    "angular-messages": "^1.7.8",
+    "angular-route": "^1.7.8"
+  },
   "scripts": {
     "test": "test",
     "dev": "webpack-dev-server --env.dev --progress"
