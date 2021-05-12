@@ -35,7 +35,7 @@
         "angular-touch": "^1.5.11",
         "angular-ui-swiper": "^2.3.8",
         "bootstrap-sass": "^3.4.1",
-        "swiper": "^4.5.0"
+        "swiper": "^6.5.1"
     },
     "scripts": {
         "test": "test",
